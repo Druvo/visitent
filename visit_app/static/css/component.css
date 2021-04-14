@@ -51,15 +51,15 @@
 	padding: 2.5em 30% 6em;
 	width: 100%;
 	height: 100%;
-	background: #fffed8;
-	color: #3b3f45;
+	background:black;
+	color: white;
 	font-size: 1.2em;
 }
 
 .fs-form-overview .fs-fields::before {
 	display: block;
 	margin-bottom: 2.5em;
-	color: #3b3f45;
+	color: white;
 	content: 'Review & Submit';
 	font-weight: 700;
 	font-size: 1.85em;
@@ -144,7 +144,7 @@ button.fs-continue,
 }
 
 .fs-form-overview ol {
-	max-width: ;
+	max-width: unset;
 }
 
 .fs-fields > li {
@@ -168,7 +168,7 @@ button.fs-continue,
 .no-js .fs-form .fs-fields > li {
 	margin: 1em 0 2em;
 	padding: 0 0 2em 0;
-	border-bottom: 2px solid rgba(0,0,0,0.1);
+	border-bottom: 2px solid transparent;
 }
 
 /* Labels & info */
@@ -242,9 +242,9 @@ button.fs-continue,
 	padding: 0 0 0.15em;
 	width: 100%;
 	border: none;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid white;
 	background-color: transparent;
-	color: #fffed8;
+	color: white;
 	text-overflow: ellipsis;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -255,9 +255,13 @@ button.fs-continue,
 	box-shadow: none; /* removes red shadow in FF*/
 }
 
-.fs-form-overview .fs-fields input {
-	border-bottom-color: transparent;
-	color: rgba(0,0,0,0.5);
+.fs-form-overview {
+	border-bottom-color: white;
+	color: black;
+}
+.fs-fields input {
+	border-bottom-color: black;
+	color: whitesmoke;
 }
 
 .fs-fields [required] {
@@ -272,7 +276,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields input:focus {
-	background-color: #fffed8; /* Fixes chrome bug with placeholder */
+	background-color: white; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input {
@@ -304,7 +308,7 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom span label {
-	color: rgba(0,0,0,0.4);
+	color: whitesmoke;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
@@ -365,14 +369,14 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
-	color: rgba(0,0,0,0.8);
+	color: white;
 }
 
 .fs-fields textarea {
 	padding: 0.25em;
 	width: 100%;
 	height: 200px;
-	border: 2px solid rgba(0,0,0,0.2);
+	border: 2px solid white;
 	background-color: transparent;
 	color: #fffed8;
 	font-weight: 700;
@@ -382,7 +386,7 @@ button.fs-continue,
 
 .fs-form-overview .fs-fields textarea {
 	height: 100px;
-	color: rgba(0,0,0,0.5);
+	color: white;
 }
 
 .fs-fields textarea:focus {
@@ -391,11 +395,11 @@ button.fs-continue,
 
 .fs-form-overview .fs-fields textarea {
 	padding: 0;
-	border-color: transparent;
+	border-color: white;
 }
 
 .fs-form-overview .fs-fields textarea:focus {
-	background: #fffed8;
+	background: black;
 }
 
 .fs-form div.cs-select.cs-skin-boxes {
@@ -411,7 +415,7 @@ button.fs-continue,
 
 .fs-form-overview .cs-skin-boxes > span::before {
 	padding-top: 50px;
-	box-shadow: 0 20px 0 #292c30, inset 0 -5px #292c30;
+	box-shadow: 0 20px 0 white, inset 0 -5px #292c30;
 }
 
 .fs-fields input.fs-mark {
@@ -628,7 +632,7 @@ button.fs-continue {
 	border: 3px solid #232529;
 	border-radius: 40px;
 	font-weight: 700;
-	color: rgba(0,0,0,0.4);
+	color: white;
 }
 
 .fs-form-overview .fs-submit,
@@ -638,8 +642,8 @@ button.fs-continue {
 }
 
 .fs-form-overview .fs-submit {
-	border-color: #232529;
-	color: #232529;
+	border-color:white;
+	color: white;
 }
 
 button.fs-continue {
@@ -650,7 +654,7 @@ button.fs-continue {
 	font-size: 1.25em;
 }
 
-button.fs-submit:hover,
+button.fs-submit:hover
 button.fs-submit:focus,
 button.fs-continue:hover {
 	background: #232529;
